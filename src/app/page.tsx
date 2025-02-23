@@ -10,7 +10,7 @@ import WelcomeScreen from "./components/home-components/WelcomeScreen";
 
 export default function Home() {
   return (
-    <div >
+    <div className="h-screen w-screen overflow-hidden overflow-y-scroll">
       <WelcomeScreen />
       <Story />
       <OurCommitment />

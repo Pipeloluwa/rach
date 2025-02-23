@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${arimaFont.className} antialiased overflow-hidden overflow-y-scroll`}
+        className={`${arimaFont.className} antialiased overflow-hidden`}
       >
         {children}
       </body>
