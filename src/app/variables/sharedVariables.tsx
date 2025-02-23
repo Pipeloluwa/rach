@@ -1,0 +1,3 @@
+export const rootUrl = "http://localhost:3000/";
+
+export const introData = `Welcome to Rach. Gabriels Fashion Company, where luxury meets affordability. Since 2016, we have been committed to crafting high-quality, stylish, and durable footwear that doesn’t break the bank. Whether you’re looking for bespoke designs or everyday elegance, our shoes are designed to elevate your style without compromise.`
