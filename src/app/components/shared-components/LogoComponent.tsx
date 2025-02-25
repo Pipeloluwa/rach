@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const LogoComponent = () => {
   return (
-    <Link href={`${rootUrl}`}>
+    <Link href={`/`}>
       <Image alt='logo' src={"/images/logos/logo.png"} width={100} height={100} priority={true} className='object-cover w-full h-full flex'>
       </Image>
     </Link>
