@@ -6,9 +6,11 @@ import React, { RefObject, useRef, useState } from 'react'
 import { MailResponseComponent } from '../shared-components/MailResponseComponent';
 import { interFont } from '@/app/fonts/fontsConfig';
 import { animateFadeUp, animateGradualSpacing } from '@/app/animation/animationVariants';
-import { FaPhoneAlt } from 'react-icons/fa';
+import { FaFacebook, FaPhoneAlt } from 'react-icons/fa';
 import { FaLocationDot } from 'react-icons/fa6';
 import { MdMail } from 'react-icons/md';
+import { RiInstagramFill } from 'react-icons/ri';
+import Link from 'next/link';
 
 export const ContactUs = () => {
     const form: RefObject<HTMLFormElement | null> = useRef(null);
@@ -83,7 +85,7 @@ export const ContactUs = () => {
                     <div className='z-10 w-full flex flex-col'>
 
                         <div className='w-[500px] flex flex-col gap-y-4'>
-                            <div className="flex flex-wrap">
+                            <div className={`${interFont.className} flex flex-wrap`}>
                                 {"Contact Us".split("").map((char, index) => (
                                     <motion.h2
                                         // viewport={{ once: true }}
@@ -133,9 +135,27 @@ export const ContactUs = () => {
                                 <li className='flex gap-x-2 items-center'>
                                     <MdMail />
 
-                                    <p>
-                                        {"Info@rachgabriels.com.ng"}
-                                    </p>
+                                    <Link href='mailto:Info@rachgabriels.com.ng'>
+                                        {"info@rachgabriels.com.ng"}
+                                    </Link>
+
+                                </li>
+
+                                <li className='flex gap-x-2 items-center'>
+                                <FaFacebook />
+
+                                    <Link href='https://www.instagram.com/rach.gabriels?igsh=eTJyYm9icDRtcGJv&utm_source=qr' target="_blank" rel="noopener noreferrer">
+                                        {"Rach. Gabriels Fashion Company"}
+                                    </Link>
+
+                                </li>
+
+                                <li className='flex gap-x-2 items-center'>
+                                <RiInstagramFill />
+
+                                    <Link href='https://www.instagram.com/rach.gabriels?igsh=eTJyYm9icDRtcGJv&utm_source=qr' target="_blank" rel="noopener noreferrer">
+                                        {"rach.gabriels"}
+                                    </Link>
 
                                 </li>
                             </motion.ul>

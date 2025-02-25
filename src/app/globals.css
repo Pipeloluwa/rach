@@ -19,17 +19,17 @@ body {
   color: #4D30FB;
 }
 
-.bg-blue{
-  background-color: #4D30FB;
-}
+/* .bg-blue{
+  background-color: #303030;
+} */
 
 .text-gold{
-  color: #FEE37D;
+  color: #eecd58;
 }
 
 
 .bg-gold{
-  background-color: #FEE37D;
+  background-color: #eecd58;
 }
 
 .text-stroke-black{
@@ -71,6 +71,10 @@ body {
 
   .small-button{
     @apply  sm:h-[45px] sm:w-[130px] h-[35px] w-[90px] text-xl rounded-lg shadow-sm shadow-black
+  }
+
+  .bg-blue{
+    @apply bg-gradient-to-b from-gray-800 to-[#0e0e0e]
   }
 }
 

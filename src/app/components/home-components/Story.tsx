@@ -4,6 +4,7 @@ import { stories } from '@/app/variables/story'
 import { motion } from "motion/react"
 import { BriefInfo } from './BriefInfo'
 import { animateFadeUp, animateFromLeft, animateGradualSpacing } from '@/app/animation/animationVariants'
+import { interFont } from '@/app/fonts/fontsConfig';
 
 export const Story = () => {
 
@@ -14,7 +15,7 @@ export const Story = () => {
                 animate={{ y: [0, 20, 0], }}
                 transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
 
-                src='/images/graphics/pentagon-design.png' className='w-full h-full flex absolute left-0 right-0 top-0 bottom-0 object-cover opacity-20' />
+                src='/images/graphics/pentagon-design.png' className='flex absolute left-0 right-0 top-0 bottom-0 opacity-5' />
 
             <div className='z-10 w-full h-full flex flex-col'>
 
@@ -23,8 +24,8 @@ export const Story = () => {
 
                 <PageMarginContainer>
 
-                    <div>
-                        <div className="flex flex-wrap justify-center gap-x-1">
+                    <div className='text-gold flex flex-col gap-y-2'>
+                        <div className={`${interFont.className} flex flex-wrap justify-center gap-x-1`}>
                             {"The Rach. Gabriels".split("").map((char, index) => (
                                 <motion.h2
                                     // viewport={{ once: true }}
@@ -35,7 +36,7 @@ export const Story = () => {
                                     custom={index}
                                     exit="hidden"
                                     style={{ whiteSpace: "pre-wrap" }}
-                                    className='base-color1 md:text-5xl text-3xl font-bold'
+                                    className=' md:text-5xl text-3xl font-bold'
                                 >
                                     {char}
                                 </motion.h2>
@@ -43,7 +44,7 @@ export const Story = () => {
                         </div>
 
 
-                        <div className="flex flex-wrap justify-center gap-x-1">
+                        <div className={`${interFont.className} flex flex-wrap justify-center gap-x-1`}>
                             {"Story".split("").map((char, index) => (
                                 <motion.h2
                                     // viewport={{ once: true }}
@@ -54,7 +55,7 @@ export const Story = () => {
                                     custom={index}
                                     exit="hidden"
                                     style={{ whiteSpace: "pre-wrap" }}
-                                    className='base-color1 md:text-5xl text-3xl font-bold'
+                                    className=' md:text-5xl text-3xl font-bold'
                                 >
                                     {char}
                                 </motion.h2>
@@ -72,7 +73,7 @@ export const Story = () => {
                             initial={"offscreen"}
                             whileInView={"onscreen"}
                             custom={0.5}
-                            className={`md:w-[1950px] md:h-auto w-[100%] h-[400px] flex flex-col overflow-hidden rounded-xl bg-[#1114b1]/70`}>
+                            className={`md:w-[1950px] md:h-auto w-[100%] h-[400px] flex flex-col overflow-hidden rounded-xl bg-gradient-to-b from-gray-800 to-black shadow-xl`}>
 
                             <img src='/images/pictures/IMG_2401.webp' alt='Story Image' className='w-full h-full object-cover -scale-x-[1]' />
 
@@ -92,7 +93,7 @@ export const Story = () => {
                                         initial={"offscreen"}
                                         whileInView={"onscreen"}
                                         custom={index * 0.2}
-                                        key={`Story${index}`} className={`${stories.length - 1 === index && index % 3 !== 0 && "xl:col-span-1 lg:col-span-2"} w-full flex flex-col rounded-xl overflow-hidden bg-[#1114b1]/70 shadow-xl`}>
+                                        key={`Story${index}`} className={`${stories.length - 1 === index && index % 3 !== 0 && "xl:col-span-1 lg:col-span-2"} w-full flex flex-col rounded-xl overflow-hidden bg-gradient-to-b from-[#434357] to-[#0b0b0e]`}>
 
                                         <div className='bg-gold text-center py-2 px-8 font-bold text-gray-800'>
                                             {item.year}

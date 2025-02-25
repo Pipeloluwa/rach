@@ -8,6 +8,7 @@ import { motion } from 'motion/react'
 import { galleryData } from '@/app/variables/galleryData';
 import { animateFadeUp, animateFromLeft, animateGradualSpacing } from '@/app/animation/animationVariants';
 import { PageMarginContainer } from '@/app/PageMarginContainer';
+import { interFont } from '@/app/fonts/fontsConfig';
 
 export const Gallery = () => {
     const sliderRef = useRef<Slider | null>(null);
@@ -39,7 +40,7 @@ export const Gallery = () => {
 
             <PageMarginContainer>
                 <div className='flex flex-col gap-y-2'>
-                    <div className="flex flex-wrap">
+                    <div className={`${interFont.className} flex flex-wrap`}>
                         {"Our Gallery".split("").map((char, index) => (
                             <motion.h2
                                 // viewport={{ once: true }}
@@ -67,7 +68,7 @@ export const Gallery = () => {
                         custom={0.25}
 
                         className='lg:w-[50%]'>
-                        {"Experience the Perfect Blend of Fashion and Elegance – Explore Our Exclusive Collection of Shoes & Clothing in Our Gallery"}
+                        {"Experience the Perfect Blend of Fashion and Elegance – Explore Our Exclusive Collection of Shoes and Clothing in Our Gallery"}
                     </motion.p>
                 </div>
 
@@ -130,7 +131,7 @@ export const Gallery = () => {
                                                 whileInView={"onscreen"}
                                                 custom={0}
 
-                                                className='absolute top-0 bottom-0 left-0 right-0 flex w-full h-full object-cover bg-gray-300'>
+                                                className='absolute top-0 bottom-0 left-0 right-0 flex w-full h-full object-cover bg-gray-500'>
                                                 <img alt='project picture' src={item} className='flex w-full h-full object-cover' />
 
                                             </motion.div>

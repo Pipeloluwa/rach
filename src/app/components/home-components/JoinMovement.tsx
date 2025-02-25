@@ -2,6 +2,7 @@
 import { PageMarginContainer } from '@/app/PageMarginContainer'
 import { motion } from "motion/react";
 import { animateGradualSpacing, animateFadeUp } from '@/app/animation/animationVariants';
+import { interFont } from '@/app/fonts/fontsConfig';
 
 export const JoinMovement = () => {
 
@@ -65,13 +66,13 @@ export const JoinMovement = () => {
                             animate={{ y: [-30, 0, -30], }}
                             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
 
-                            className='z-10 lg:hidden flex h-[350px] bg-gradient-to-b from-blue-400 via-white to-blue-100 rounded-[2.5rem] overflow-hidden'>
+                            className='z-10 lg:hidden flex h-[350px] bg-gray-500 overflow-hidden'>
                             <img src="/images/pictures/IMG_2099.webp" alt="" className='w-full h-full flex object-cover' />
                         </motion.div>
 
 
                         <div className='w-full flex flex-col gap-y-8 items-center justify-center lg:mr-12 p-6'>
-                            <div className="flex flex-wrap">
+                            <div className={`${interFont.className} flex flex-wrap`}>
                                 {"Join The Movement".split("").map((char, index) => (
                                     <motion.h2
                                         // viewport={{ once: true }}

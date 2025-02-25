@@ -2,6 +2,7 @@
 import { PageMarginContainer } from '@/app/PageMarginContainer'
 import { motion } from "motion/react";
 import { animateFadeUp, animateGradualSpacing } from '@/app/animation/animationVariants';
+import { interFont } from '@/app/fonts/fontsConfig';
 
 export const OurCommitment = () => {
     return (
@@ -10,9 +11,9 @@ export const OurCommitment = () => {
             <motion.div
                 animate={{ y: [0, 50, 0], }}
                 transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                className='absolute -right-[200px] -bottom-[10px]'>
+                className='absolute -right-[200px] bottom-[105px]'>
 
-                <img src="/images/graphics/ball-design.png" alt="" className='lg:w-[1000px] w-[800px] rotate-180' />
+                <img src="/images/graphics/ball-design.png" alt="" className='lg:w-[700px] w-[500px] rotate-180' />
 
             </motion.div>
 
@@ -23,7 +24,7 @@ export const OurCommitment = () => {
                     <div className='grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-x-12 lg:gap-y-0 gap-y-8'>
 
                         <div className='w-full h-full flex flex-col gap-y-4'>
-                            <div className="flex flex-wrap">
+                            <div className={`${interFont.className} flex flex-wrap`}>
                                 {"Our".split("").map((char, index) => (
                                     <motion.h2
                                         // viewport={{ once: true }}
@@ -42,7 +43,7 @@ export const OurCommitment = () => {
 
                             </div>
 
-                            <div className="flex flex-wrap">
+                            <div className={`${interFont.className} flex flex-wrap`}>
                                 {"Commitment:".split("").map((char, index) => (
                                     <motion.h2
                                         // viewport={{ once: true }}
