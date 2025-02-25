@@ -93,9 +93,9 @@ export const Story = () => {
                                         initial={"offscreen"}
                                         whileInView={"onscreen"}
                                         custom={index * 0.2}
-                                        key={`Story${index}`} className={`${stories.length - 1 === index && index % 3 !== 0 && "xl:col-span-1 lg:col-span-2"} w-full flex flex-col rounded-xl overflow-hidden bg-gradient-to-b from-[#434357] to-[#0b0b0e]`}>
+                                        key={`Story${index}`} className={`${stories.length - 1 === index && index % 3 !== 0 && "xl:col-span-1 lg:col-span-2"} w-full flex flex-col rounded-xl bg-gradient-to-b from-[#434357] to-[#0b0b0e]`}>
 
-                                        <div className='bg-gold text-center py-2 px-8 font-bold text-gray-800'>
+                                        <div className='bg-gold text-center py-2 px-8 font-bold text-gray-800 rounded-t-xl'>
                                             {item.year}
                                         </div>
 
