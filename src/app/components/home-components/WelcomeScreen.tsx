@@ -47,7 +47,7 @@ const WelcomeScreen = () => {
                 <motion.div
                     animate={{ x: [0, 50, 0], }}
                     transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                    className=' flex 2xl:size-[250px] xl:size-[200px] size-[150px] lg:opacity-100 opacity-0  bg-gradient-to-b from-blue-400 via-white to-blue-100 rounded-[2.5rem] overflow-hidden'>
+                    className=' flex 2xl:size-[250px] xl:size-[200px] size-[150px] lg:opacity-100 opacity-0  bg-gray-500 rounded-[2.5rem] overflow-hidden'>
 
                     <img src="/images/pictures/IMG_1945.webp" alt="" className='w-full h-full flex object-cover' />
                 </motion.div>
