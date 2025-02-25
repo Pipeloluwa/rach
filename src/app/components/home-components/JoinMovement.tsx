@@ -66,7 +66,7 @@ export const JoinMovement = () => {
                             animate={{ y: [-30, 0, -30], }}
                             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
 
-                            className='z-10 lg:hidden flex h-[350px] bg-gray-500 overflow-hidden'>
+                            className='z-10 lg:hidden flex h-[350px] bg-gray-500 rounded-[2.5rem] overflow-hidden'>
                             <img src="/images/pictures/IMG_2099.webp" alt="" className='w-full h-full flex object-cover' />
                         </motion.div>
 

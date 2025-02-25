@@ -7,6 +7,7 @@ import { introData } from '@/app/variables/sharedVariables';
 import { animateBlurIn, animateGradualSpacing, animateFromLeft, animateFromRight } from '@/app/animation/animationVariants';
 import { WelcomeSuspense } from '../suspense-components/WelcomeSuspense';
 import { useEffect } from 'react';
+import Link from 'next/link';
 
 
 const WelcomeScreen = () => {
@@ -190,9 +191,9 @@ const WelcomeScreen = () => {
                 </motion.div>
 
 
-                <button className={`${interFont.className} big-button text-[16px] w-[250px] h-[60px] flex justify-center items-center rounded-xl text-gray-800 font-bold bg-gradient-to-b from-[#e2be3b] from-[30%] to-[#a78304]`}>
+                <Link href={"/project100"} className={`${interFont.className} big-button text-[16px] w-[250px] h-[60px] flex justify-center items-center rounded-xl text-gray-800 font-bold bg-gradient-to-b from-[#e2be3b] from-[30%] to-[#a78304]`}>
                     {"View Project 100"}
-                </button>
+                </Link>
 
                 {/* <div className='bg-gradient-to-r from-red-300 to-transparent w-[40%] h-1'/> */}
 
