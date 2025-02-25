@@ -97,7 +97,7 @@ const WelcomeScreen = () => {
 
 
 
-            <div className='z-10 lg:w-[600px] sm:w-[80%] xl:ml-[250px] lg:mt-[100px] mx-auto flex flex-col lg:items-start items-center justify-center px-[2%] gap-y-8'>
+            <div className='z-10 lg:w-[600px] sm:w-[80%] xl:ml-[250px] lg:mt-[100px] mx-auto flex flex-col lg:items-start items-center justify-center lg:text-start text-center px-[2%] gap-y-8'>
                 <motion.header
                     variants={animateBlurIn}
                     initial={"offscreen"}
