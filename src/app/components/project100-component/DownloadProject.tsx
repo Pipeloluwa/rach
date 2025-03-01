@@ -25,7 +25,7 @@ export const DownloadProject = () => {
       const link = document.createElement("a");
   
       link.href = url;
-      link.download = fileName.substring(6, fileName.length);
+      link.download = fileName.substring(7, fileName.length);
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -39,7 +39,7 @@ export const DownloadProject = () => {
 
   const downloadFilesParallel = async (): Promise<void> => {
     
-    const files = ["files/Project100-Budget.pdf", "/files/Project100.pdf"]; 
+    const files = ["/files/Project100-Budget.pdf", "/files/Project100.pdf"]; 
 
     setProcessing(true);
     // to download all files simultaneously
