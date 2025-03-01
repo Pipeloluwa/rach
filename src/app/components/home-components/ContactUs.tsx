@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import { PageMarginContainer } from '@/app/PageMarginContainer'
 import { motion } from 'motion/react'
 import React, { RefObject, useRef, useState } from 'react'
-import { MailResponseComponent } from '../shared-components/MailResponseComponent';
+import {  ResponseComponent } from '../shared-components/ResponseComponent';
 import { interFont } from '@/app/fonts/fontsConfig';
 import { animateFadeUp, animateGradualSpacing } from '@/app/animation/animationVariants';
 import { FaFacebook, FaPhoneAlt } from 'react-icons/fa';
@@ -259,7 +259,7 @@ export const ContactUs = () => {
 
 
 
-                            <MailResponseComponent mailDialog={mailDialog} setMailDialog={setMailDialog} />
+                            <ResponseComponent mailDialog={mailDialog} setMailDialog={setMailDialog} />
 
 
                         </motion.form>
