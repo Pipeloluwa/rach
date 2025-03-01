@@ -25,7 +25,7 @@ export const DownloadProject = () => {
       const link = document.createElement("a");
   
       link.href = url;
-      link.download = fileName;
+      link.download = fileName.substring(6, fileName.length);
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
