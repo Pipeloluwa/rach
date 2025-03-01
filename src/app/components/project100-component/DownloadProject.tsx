@@ -15,10 +15,11 @@ export const DownloadProject = () => {
 
     setProcessing(true);
 
-    files.forEach((file) => {
+    files.forEach( async (file) => {
 
       const fileUrl = `${window.location.origin}/${file}`; // Get full file URL
-      fetch(fileUrl)
+      
+      await fetch(fileUrl)
         .then(response => response.blob())
         .then(blob => {
           const url = window.URL.createObjectURL(blob);
@@ -32,7 +33,7 @@ export const DownloadProject = () => {
 
           setMailDialog("Successful");
         })
-        .catch(error => { setMailDialog("Sorry, could not download"); });
+        .catch(error => { setMailDialog("Sorry, could not download files"); });
 
     });
 
@@ -49,7 +50,7 @@ export const DownloadProject = () => {
           <button onClick={() => downloadFiles()} className={`${interFont.className} ${processing ? "pointer-events-none" : "pointer-events-auto"} big-button text-[16px] w-[250px] h-[60px] flex justify-center items-center rounded-xl text-gray-800 font-bold bg-gradient-to-b from-[#e2be3b] from-[30%] to-[#a78304]`}>
 
             <span >
-              {processing ? "Downloading..." : "Download File"}
+              {processing ? "Downloading..." : "Download Files"}
             </span>
           </button>
         </div>

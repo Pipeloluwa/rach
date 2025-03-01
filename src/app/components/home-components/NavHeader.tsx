@@ -21,9 +21,9 @@ export const NavHeader: React.FC<IActiveNav> = ({ activeTabValue }) => {
                 {"Home"}
             </Link>
 
-            <Link href={"/"} className='size-[90px]'>
+            <div className='size-[90px]'>
                 <LogoComponent />
-            </Link>
+            </div>
 
             <Link href={"/project100"} className={`${activeTab === "project100" ? "text-gold font-bold" : "text-gray-300"} cursor-pointer`}>
                 {"Project 100"}
