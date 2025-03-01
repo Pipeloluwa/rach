@@ -22,6 +22,7 @@ export default function Home() {
       <ContactUs />
       <Gallery />
     
+
     </div>
   );
 }
