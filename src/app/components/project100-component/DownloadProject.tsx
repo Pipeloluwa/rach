@@ -9,36 +9,48 @@ export const DownloadProject = () => {
   const [processing, setProcessing] = useState<boolean>(false);
 
 
-  const downloadFiles = () => {
 
-    const files = ["files/Project100-Budget.pdf", "/files/Project100.pdf"]; // List of files in the public folder
+
+  const downloadFile = async (fileName: string): Promise<void> => {
+    try {
+      const fileUrl = `${window.location.origin}/${fileName}`;
+      const response = await fetch(fileUrl);
+      
+      if (!response.ok) {
+        setMailDialog("Sorry, could not complete files download");
+      }
+  
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement("a");
+  
+      link.href = url;
+      link.download = fileName;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url); // Cleanup memory
+  
+    } catch (error) {
+      setMailDialog("Sorry, could not complete files download");
+    }
+  };
+
+
+  const downloadFilesParallel = async (): Promise<void> => {
+    
+    const files = ["files/Project100-Budget.pdf", "/files/Project100.pdf"]; 
 
     setProcessing(true);
-
-    files.forEach( async (file) => {
-
-      const fileUrl = `${window.location.origin}/${file}`; // Get full file URL
-      
-      await fetch(fileUrl)
-        .then(response => response.blob())
-        .then(blob => {
-          const url = window.URL.createObjectURL(blob);
-          const link = document.createElement("a");
-          link.href = url;
-          link.download = file;
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-          window.URL.revokeObjectURL(url); // Clean up after download
-
-          setMailDialog("Successful");
-        })
-        .catch(error => { setMailDialog("Sorry, could not download files"); });
-
-    });
-
+    // to download all files simultaneously
+    await Promise.all(files.map(file => downloadFile(file)));
+  
     setProcessing(false);
+    setMailDialog("Successful");
+    
   };
+
+
 
   return (
     <div className='bg-black'>
@@ -47,7 +59,7 @@ export const DownloadProject = () => {
           <p>
             {"To read more details about the project, click the button below to download."}
           </p>
-          <button onClick={() => downloadFiles()} className={`${interFont.className} ${processing ? "pointer-events-none" : "pointer-events-auto"} big-button text-[16px] w-[250px] h-[60px] flex justify-center items-center rounded-xl text-gray-800 font-bold bg-gradient-to-b from-[#e2be3b] from-[30%] to-[#a78304]`}>
+          <button onClick={() => downloadFilesParallel()} className={`${interFont.className} ${processing ? "pointer-events-none" : "pointer-events-auto"} big-button text-[16px] w-[250px] h-[60px] flex justify-center items-center rounded-xl text-gray-800 font-bold bg-gradient-to-b from-[#e2be3b] from-[30%] to-[#a78304]`}>
 
             <span >
               {processing ? "Downloading..." : "Download Files"}
