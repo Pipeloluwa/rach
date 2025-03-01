@@ -19,9 +19,9 @@ export default function Home() {
       <Project100 projectValue={"Project 100"}/>
       <ApproachSustain />
       <JoinMovement />
-      <Gallery />
       <ContactUs />
-
+      <Gallery />
+    
     </div>
   );
 }
