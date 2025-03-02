@@ -39,7 +39,7 @@ export const DownloadProject = () => {
 
   const downloadFilesParallel = async (): Promise<void> => {
     
-    const files = ["/files/Project100-Budget.pdf", "/files/Project100.pdf"]; 
+    const files = ["/files/Project100.pdf", "/files/Project100-Budget.pdf"]; 
 
     setProcessing(true);
     // to download all files simultaneously
