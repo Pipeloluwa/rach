@@ -17,7 +17,7 @@ export const DownloadProject = () => {
       const response = await fetch(fileUrl);
       
       if (!response.ok) {
-        setMailDialog("Sorry, could not complete files download");
+        setMailDialog("Sorry, could not download the file");
       }
   
       const blob = await response.blob();
@@ -32,14 +32,14 @@ export const DownloadProject = () => {
       window.URL.revokeObjectURL(url); // Cleanup memory
   
     } catch (error) {
-      setMailDialog("Sorry, could not complete files download");
+      setMailDialog("Sorry, could not download the file");
     }
   };
 
 
   const downloadFilesParallel = async (): Promise<void> => {
     
-    const files = ["/files/Project100.pdf", "/files/Project100-Budget.pdf"]; 
+    const files = ["/files/Project100.pdf"]; 
 
     setProcessing(true);
     // to download all files simultaneously
@@ -62,7 +62,7 @@ export const DownloadProject = () => {
           <button onClick={() => downloadFilesParallel()} className={`${interFont.className} ${processing ? "pointer-events-none" : "pointer-events-auto"} big-button text-[16px] w-[250px] h-[60px] flex justify-center items-center rounded-xl text-gray-800 font-bold bg-gradient-to-b from-[#e2be3b] from-[30%] to-[#a78304]`}>
 
             <span >
-              {processing ? "Downloading 2 Files..." : "Download Files"}
+              {processing ? "Downloading..." : "Download File"}
             </span>
           </button>
         </div>
