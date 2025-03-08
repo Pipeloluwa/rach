@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Head } from "next/document";
 import "./globals.css";
 import { arimaFont } from "./fonts/fontsConfig";
 
@@ -15,6 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+
       <body
         className={`${arimaFont.className} antialiased overflow-hidden`}
       >
