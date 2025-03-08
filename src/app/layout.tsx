@@ -15,10 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
+      {/* <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
-      </head>
+      </head> */}
 
       <body
         className={`${arimaFont.className} antialiased overflow-hidden`}
