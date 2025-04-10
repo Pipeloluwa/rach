@@ -15,6 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="uP_yl-P8Wih40ZlTHhlu0HuqjCQ8kOk3E3N0QlOOT-w" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon"></link>
+      </head>
       <body
         className={`${arimaFont.className} antialiased overflow-hidden`}
       >
