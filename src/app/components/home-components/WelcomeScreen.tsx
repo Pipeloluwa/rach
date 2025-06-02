@@ -118,17 +118,13 @@ const WelcomeScreen = () => {
 
 
                         <h1 className='md:-mt-[50px]'>
-                            <span className='bg-gradient-to-b from-[#ffe894] from-[30%] to-[#a78304] bg-clip-text xl:text-[80px] lg:text-[70px] md:text-[60px] text-5xl xl:leading-[100px] leading-[80px]'>
-                                <span className='text-transparent'>
+                            <span className='text-transparent bg-gradient-to-b from-[#ffe894] from-[30%] to-[#a78304] bg-clip-text xl:text-[80px] lg:text-[70px] md:text-[60px] text-5xl xl:leading-[100px] leading-[80px]'>
                                     {"Rach."}
-                                </span>
                             </span>
 
                             <br className='lg:flex hidden' />
-                            <span className='bg-gradient-to-b from-[#ffe894] from-[30%] to-[#a78304] bg-clip-text xl:text-[80px] lg:text-[70px] md:text-[60px] text-5xl xl:leading-[100px] leading-[80px]'>
-                                <span className='text-transparent'>
+                            <span className=' text-transparent bg-gradient-to-b from-[#ffe894] from-[30%] to-[#a78304] bg-clip-text xl:text-[80px] lg:text-[70px] md:text-[60px] text-5xl xl:leading-[100px] leading-[80px]'>
                                     {" Gabriels"}
-                                </span>
                             </span>
 
                         </h1>
