@@ -12,6 +12,8 @@ import { NavHeader } from "./components/home-components/NavHeader";
 export default function Home() {
   return (
     <div className="h-screen w-screen overflow-hidden overflow-y-scroll">
+
+
       <NavHeader activeTabValue="home"/>
       <WelcomeScreen />
       <Story />

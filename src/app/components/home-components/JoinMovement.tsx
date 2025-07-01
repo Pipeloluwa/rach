@@ -72,7 +72,7 @@ export const JoinMovement = () => {
 
 
                         <div className='w-full flex flex-col gap-y-8 items-center justify-center lg:mr-12 p-6'>
-                            <div className={`${interFont.className} flex flex-wrap`}>
+                            <div className={`degular-font-wide flex flex-wrap`}>
                                 {"Join The Movement".split("").map((char, index) => (
                                     <motion.h2
                                         // viewport={{ once: true }}

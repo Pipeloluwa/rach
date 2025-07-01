@@ -10,6 +10,21 @@ body {
 }
 
 
+@font-face {
+  font-family: 'DegularFont';
+  src: url('/fonts/Degular/DegularDisplay-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.degular-font-wide{
+  font-family: 'DegularFont', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+
+
 .background-clip-1{
   clip-path: polygon(0% 0%, 55.9% 0%, 100% 100%, 0% 100%);
 }
@@ -24,12 +39,13 @@ body {
 } */
 
 .text-gold{
-  color: #eecd58;
+  color: #e8c37d;
 }
 
 
 .bg-gold{
-  background-color: #eecd58;
+    background-color: #e8c37d;
+  /* background-color: #eecd58; */
 }
 
 .text-stroke-black{

@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+
+      fontFamily: {
+        degularFont: ['DegularFont', 'sans-serif'],
+      },
     },
   },
   plugins: [],

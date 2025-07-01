@@ -103,7 +103,7 @@ const WelcomeScreen = () => {
                     initial={"offscreen"}
                     whileInView={"onscreen"}
 
-                    className={` ${interFont.className} flex flex-col lg:items-start items-center gap-y-2 font-bold`}>
+                    className={` degular-font-wide flex flex-col lg:items-start items-center gap-y-2 font-bold`}>
 
                     <div className=''>
                         <motion.div
@@ -187,7 +187,7 @@ const WelcomeScreen = () => {
                 </motion.div>
 
 
-                <Link href={"/project100"} className={`${interFont.className} big-button text-[16px] w-[250px] h-[60px] flex justify-center items-center rounded-xl text-gray-800 font-bold bg-gradient-to-b from-[#e2be3b] from-[30%] to-[#a78304]`}>
+                <Link href={"/project100"} className={`degular-font-wide big-button text-[16px] w-[250px] h-[60px] flex justify-center items-center rounded-xl text-gray-800 font-bold bg-gradient-to-b from-[#e2be3b] from-[30%] to-[#a78304]`}>
                     {"View Project 100"}
                 </Link>
 

@@ -18,3 +18,4 @@ export const interFont = Inter({ subsets: ["latin"] });
     display: 'swap',
     subsets: ["latin"]
   });
+

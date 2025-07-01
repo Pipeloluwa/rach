@@ -59,7 +59,7 @@ export const DownloadProject = () => {
           <p>
             {"To read more details about the project, click the button below to download."}
           </p>
-          <button onClick={() => downloadFilesParallel()} className={`${interFont.className} ${processing ? "pointer-events-none" : "pointer-events-auto"} big-button text-[16px] w-[250px] h-[60px] flex justify-center items-center rounded-xl text-gray-800 font-bold bg-gradient-to-b from-[#e2be3b] from-[30%] to-[#a78304]`}>
+          <button onClick={() => downloadFilesParallel()} className={`degular-font-wide ${processing ? "pointer-events-none" : "pointer-events-auto"} big-button text-[16px] w-[250px] h-[60px] flex justify-center items-center rounded-xl text-gray-800 font-bold bg-gradient-to-b from-[#e2be3b] from-[30%] to-[#a78304]`}>
 
             <span >
               {processing ? "Downloading..." : "Download File"}

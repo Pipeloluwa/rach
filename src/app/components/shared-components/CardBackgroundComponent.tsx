@@ -17,7 +17,7 @@ export const CardBackgroundComponent: React.FC<ICardBackground> = ({ imagePath, 
 
 
       <section className='w-[75%] text-center h-full mx-auto z-10  absolute left-0 right-0 top-0 bottom-0 flex flex-col gap-y-8 items-center justify-center '>
-        <div className={`${interFont.className} flex flex-wrap`}>
+        <div className={`degular-font-wide flex flex-wrap`}>
           {
             title.split("").map((char, index) =>
               <motion.p

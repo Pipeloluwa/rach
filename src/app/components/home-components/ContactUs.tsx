@@ -85,7 +85,7 @@ export const ContactUs = () => {
                     <div className='z-10 w-full flex flex-col'>
 
                         <div className='w-[500px] flex flex-col gap-y-4'>
-                            <div className={`${interFont.className} flex flex-wrap`}>
+                            <div className={`degular-font-wide flex flex-wrap`}>
                                 {"Contact Us".split("").map((char, index) => (
                                     <motion.h2
                                         // viewport={{ once: true }}
@@ -251,7 +251,7 @@ export const ContactUs = () => {
                 text-white sm:hover:text-orange-800 sm:hover:transition-colors hover:ease-linear sm:hover:duration-500`}
                                 >
 
-                                    <span className={`${interFont.className} capitalize`}>
+                                    <span className={`degular-font-wide capitalize`}>
                                         {formProcessing ? "Sending..." : "Send"}
                                     </span>
                                 </button>

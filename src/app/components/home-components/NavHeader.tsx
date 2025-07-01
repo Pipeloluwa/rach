@@ -9,6 +9,9 @@ import { IActiveNav } from '@/app/interfaces/INavHeader';
 
 export const NavHeader: React.FC<IActiveNav> = ({ activeTabValue }) => {
     const [activeTab, setActiveTab] = useState<string>("");
+    let logoUrls= new Map<string, string>();
+    logoUrls.set("home", "RG LOGO.png");
+    logoUrls.set("project100", "PROJECT 100 LOGO.png");
 
 
     useEffect(() => {
@@ -21,8 +24,8 @@ export const NavHeader: React.FC<IActiveNav> = ({ activeTabValue }) => {
                 {"Home"}
             </Link>
 
-            <div className='size-[90px]'>
-                <LogoComponent />
+            <div className='h-[70px]'>
+                <LogoComponent path={`${logoUrls.get(activeTab)}`}/>
             </div>
 
             <Link href={"/project100"} className={`${activeTab === "project100" ? "text-gold font-bold" : "text-gray-300"} cursor-pointer`}>

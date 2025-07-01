@@ -24,7 +24,7 @@ export const OurCommitment = () => {
                     <div className='grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-x-12 lg:gap-y-0 gap-y-8'>
 
                         <div className='w-full h-full flex flex-col gap-y-4'>
-                            <div className={`${interFont.className} flex flex-wrap`}>
+                            <div className={`degular-font-wide flex flex-wrap`}>
                                 {"Our".split("").map((char, index) => (
                                     <motion.h2
                                         // viewport={{ once: true }}
@@ -43,7 +43,7 @@ export const OurCommitment = () => {
 
                             </div>
 
-                            <div className={`${interFont.className} flex flex-wrap`}>
+                            <div className={`degular-font-wide flex flex-wrap`}>
                                 {"Commitment:".split("").map((char, index) => (
                                     <motion.h2
                                         // viewport={{ once: true }}

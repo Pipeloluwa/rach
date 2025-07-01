@@ -40,7 +40,7 @@ export const Gallery = () => {
 
             <PageMarginContainer>
                 <div className='flex flex-col gap-y-2'>
-                    <div className={`${interFont.className} flex flex-wrap`}>
+                    <div className={`degular-font-wide flex flex-wrap`}>
                         {"Our Gallery".split("").map((char, index) => (
                             <motion.h2
                                 // viewport={{ once: true }}

@@ -45,7 +45,7 @@ export const ApproachSustain = () => {
 
 
                                 className='lg:mt-16 flex flex-col gap-y-6'>
-                                <h4 className={`${interFont.className} text-gold font-bold text-3xl`}>
+                                <h4 className={`degular-font-wide text-gold font-bold text-3xl`}>
                                     {"Our Approach"}
                                 </h4>
 
@@ -121,7 +121,7 @@ export const ApproachSustain = () => {
 
                                 className='mt-16 flex flex-col gap-y-6'>
 
-                                <h4 className={`${interFont.className} text-gold font-bold text-3xl`}>
+                                <h4 className={`degular-font-wide text-gold font-bold text-3xl`}>
                                     {"Impact and Sustainability"}
                                 </h4>
 

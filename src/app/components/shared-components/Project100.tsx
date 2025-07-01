@@ -62,7 +62,7 @@ export const Project100: React.FC<IProjectValue> = ({ projectValue }) => {
                         projectValue
                         &&
 
-                        <div className={`${interFont.className} z-10 lg:hidden flex flex-wrap`}>
+                        <div className={`degular-font-wide z-10 lg:hidden flex flex-wrap`}>
                             {"Project 100".split("").map((char, index) => (
                                 <motion.h2
                                     // viewport={{ once: true }}
@@ -105,7 +105,7 @@ export const Project100: React.FC<IProjectValue> = ({ projectValue }) => {
                             &&
 
 
-                            <div className={`${interFont.className} lg:flex hidden flex-wrap`}>
+                            <div className={`degular-font-wide lg:flex hidden flex-wrap`}>
                                 {"Project 100".split("").map((char, index) => (
                                     <motion.h2
                                         // viewport={{ once: true }}
