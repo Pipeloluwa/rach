@@ -1,25 +1,19 @@
 "use client";;
 import dynamic from 'next/dynamic';
 
-import { interFont } from '@/app/fonts/fontsConfig';
 import { motion } from "motion/react";
 import { introData } from '@/app/variables/sharedVariables';
 import { animateBlurIn, animateGradualSpacing, animateFromLeft, animateFromRight } from '@/app/animation/animationVariants';
 import { WelcomeSuspense } from '../suspense-components/WelcomeSuspense';
-import { useEffect } from 'react';
 import Link from 'next/link';
 
 
 const WelcomeScreen = () => {
 
-    useEffect(() => {
-
-    }, []);
-
 
 
     return (
-        <div className='w-full min-h-svh lg:-mt-[90px] mt-[50px]  flex flex-col mb-20 px-[5%] relative overflow-hidden lg:flex justify-center items-center '>
+        <main className='w-full min-h-svh lg:-mt-[90px] mt-[50px]  flex flex-col mb-20 px-[5%] relative overflow-hidden lg:flex justify-center items-center '>
 
 
             <motion.div
@@ -54,20 +48,6 @@ const WelcomeScreen = () => {
                 </motion.div>
 
             </div>
-
-
-
-            {/* <motion.div
-                variants={animateFromLeft}
-                initial={"offscreen"}
-                whileInView={"onscreen"}
-                custom={0.25}
-
-                className='absolute lg:left-[200px] xl:-ml-0 lg:-ml-[100px] lg:top-[150px] lg:opacity-100 opacity-0'>
-
-                <img src="/images/graphics/shapes-design-gold.png" alt="" className='lg:w-[200px] sm:w-[150px] w-[100px]' />
-
-            </motion.div> */}
 
 
 
@@ -118,12 +98,12 @@ const WelcomeScreen = () => {
 
 
                         <h1 className='md:-mt-[50px]'>
-                            <span className='text-transparent bg-gradient-to-b from-[#ffe894] from-[30%] to-[#a78304] bg-clip-text xl:text-[80px] lg:text-[70px] md:text-[60px] text-5xl xl:leading-[100px] leading-[80px]'>
+                            <span className='text-transparent text-gold bg-clip-text xl:text-[80px] lg:text-[70px] md:text-[60px] text-5xl xl:leading-[100px] leading-[80px]'>
                                     {"Rach."}
                             </span>
 
                             <br className='lg:flex hidden' />
-                            <span className=' text-transparent bg-gradient-to-b from-[#ffe894] from-[30%] to-[#a78304] bg-clip-text xl:text-[80px] lg:text-[70px] md:text-[60px] text-5xl xl:leading-[100px] leading-[80px]'>
+                            <span className=' text-transparent text-gold bg-clip-text xl:text-[80px] lg:text-[70px] md:text-[60px] text-5xl xl:leading-[100px] leading-[80px]'>
                                     {" Gabriels"}
                             </span>
 
@@ -144,7 +124,7 @@ const WelcomeScreen = () => {
 
 
                     <div className="flex flex-wrap gap-x-1">
-                        {"ZERO BUDGET, MILLION DOLLAR LOOK".split("").map((char, index) => (
+                        {"Luxury For All...".split("").map((char, index) => (
                             <motion.p
                                 // viewport={{ once: true }}
                                 key={`Welcome to${index}`}
@@ -165,7 +145,7 @@ const WelcomeScreen = () => {
                 </div>
 
 
-                <motion.main
+                <motion.p
                     // viewport={{once: true}}
                     variants={animateFromLeft}
                     initial={"offscreen"}
@@ -174,7 +154,7 @@ const WelcomeScreen = () => {
 
                     className='flex text-sm lg:text-start text-center'>
                     {introData}
-                </motion.main>
+                </motion.p>
 
 
 
@@ -199,7 +179,7 @@ const WelcomeScreen = () => {
 
 
 
-        </div>
+        </main>
     )
 }
 
