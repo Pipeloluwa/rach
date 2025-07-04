@@ -124,7 +124,7 @@ const WelcomeScreen = () => {
 
 
                     <div className="flex flex-wrap gap-x-1">
-                        {"Luxury For All...".split("").map((char, index) => (
+                        {"Luxury. For All...".split("").map((char, index) => (
                             <motion.p
                                 // viewport={{ once: true }}
                                 key={`Welcome to${index}`}
