@@ -150,7 +150,7 @@ export const OurCommitment = () => {
                                     </h4>
 
                                     <p className='text-sm text-center'>
-                                        {"Through initiatives like Project 100, we are equipping young Nigerians with the skills to create and sell high-quality shoes, fostering economic empowerment."}
+                                        {"Through initiatives like Project Centum, we are equipping young Nigerians with the skills to create and sell high-quality shoes, fostering economic empowerment."}
                                     </p>
                                 </div>
                             </div>

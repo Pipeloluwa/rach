@@ -53,7 +53,7 @@ export const Project100 = () => {
 
 
                     <div className="z-10 lg:hidden flex flex-wrap">
-                        {"Project 100".split("").map((char, index) => (
+                        {"Project Centum".split("").map((char, index) => (
                             <motion.h2
                                 // viewport={{ once: true }}
                                 key={`Welcome to${index}`}
@@ -86,7 +86,7 @@ export const Project100 = () => {
                     <div className='z-10 lg:w-[50%] flex gap-y-6 flex-col'>
 
                         <div className="lg:flex hidden flex-wrap">
-                            {"Project 100".split("").map((char, index) => (
+                            {"Project Centum".split("").map((char, index) => (
                                 <motion.h2
                                     // viewport={{ once: true }}
                                     key={`Welcome to${index}`}
@@ -114,11 +114,11 @@ export const Project100 = () => {
 
                             className='gap-y-4 flex flex-col'>
                             <h4 className='text-xl italic font-bold'>
-                                {"What is Project 100?"}
+                                {"What is Project Centum?"}
                             </h4>
 
                             <p>
-                                {"Project 100 is an innovative initiative by Rach. Gabriels Fashion Company aimed at training and empowering 100 young Nigerians in shoemaking and entrepreneurship every year. This program provides out-of-school youth with hands-on training, mentorship, and market integration support to build successful careers in the fashion and footwear industry."}
+                                {"Project Centum is an innovative initiative by Rach. Gabriels Fashion Company aimed at training and empowering 100 young Nigerians in shoemaking and entrepreneurship every year. This program provides out-of-school youth with hands-on training, mentorship, and market integration support to build successful careers in the fashion and footwear industry."}
                             </p>
                         </motion.div>
 
@@ -130,11 +130,11 @@ export const Project100 = () => {
 
                             className='gap-y-4 flex flex-col'>
                             <h4 className='text-xl italic font-bold'>
-                                {"Why Project 100?"}
+                                {"Why Project Centum?"}
                             </h4>
 
                             <p>
-                                {"Nigeria faces high unemployment rates, especially among young people. Many have the talent and passion for fashion but lack the skills and resources to turn their aspirations into reality. Project 100 is designed to change this by offering:"}
+                                {"Nigeria faces high unemployment rates, especially among young people. Many have the talent and passion for fashion but lack the skills and resources to turn their aspirations into reality. Project Centum is designed to change this by offering:"}
                             </p>
 
                             <ul className='flex flex-col text-sm list-disc pl-4'>

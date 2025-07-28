@@ -18,7 +18,7 @@ export default function Home() {
       <WelcomeScreen />
       <Story />
       <OurCommitment />
-      <Project100 projectValue={"Project 100"}/>
+      <Project100 projectValue={"Project Centum"}/>
       <ApproachSustain />
       <JoinMovement />
       <ContactUs />

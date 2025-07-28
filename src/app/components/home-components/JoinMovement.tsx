@@ -99,7 +99,7 @@ export const JoinMovement = () => {
                                 custom={0.25}
 
                             >
-                                {"Be part of the Rach. Gabriels community—whether as a customer, partner, or supporter of Project 100. Together, we can make luxury accessible, create opportunities, and empower the next generation of Nigerian shoemakers."}
+                                {"Be part of the Rach. Gabriels community—whether as a customer, partner, or supporter of Project Centum. Together, we can make luxury accessible, create opportunities, and empower the next generation of Nigerian shoemakers."}
                             </motion.p>
                         </div>
 

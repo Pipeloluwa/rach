@@ -146,7 +146,7 @@ export const ApproachSustain = () => {
                                         <h5 className='mb-2 font-bold text-xl'>
                                             {"Scaling for the Future"}
                                         </h5>
-                                        {"We aim to grow Project 100 beyond our first 100 participants, extending opportunities to thousands of aspiring entrepreneurs across Nigeria."}
+                                        {"We aim to grow Project Centum beyond our first 100 participants, extending opportunities to thousands of aspiring entrepreneurs across Nigeria."}
                                     </li>
 
 
