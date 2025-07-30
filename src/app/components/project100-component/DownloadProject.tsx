@@ -53,7 +53,7 @@ export const DownloadProject = () => {
 
 
   return (
-    <div className='bg-black'>
+    <div >
       <PageMarginContainer>
         <div className='pt-10 w-full flex flex-col gap-y-2 justify-center items-center text-center'>
           <p>

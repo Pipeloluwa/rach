@@ -12,7 +12,7 @@ export const Project100: React.FC<IProjectValue> = ({ projectValue }) => {
     const viewDivProjectRef = useInView(divProjectRef, { amount: 0.25 });
 
     return (
-        <div className='w-full lg:py-[8rem] py-[4rem] overflow-hidden'>
+        <div className='w-full min-h-svh  flex justify-center items-center lg:py-[8rem] py-[4rem] overflow-hidden'>
 
             <PageMarginContainer>
                 <div className='w-full relative flex lg:flex-row flex-col justify-center lg:gap-x-16 lg:gap-y-0 gap-y-12'>
@@ -83,21 +83,26 @@ export const Project100: React.FC<IProjectValue> = ({ projectValue }) => {
                     }
 
 
-                    <div ref={divProjectRef}>
-                        <motion.div
-                            variants={animateFromLeft}
-                            initial={"offscreen"}
-                            animate={viewDivProjectRef ? "onscreen" : "offscreen"}
-                            custom={0.25}
 
-                            className='z-10 flex lg:w-[400px] w-full lg:h-auto h-[400px] bg-gradient-to-b from-blue-400 via-white to-blue-100 rounded-[2.5rem] overflow-hidden'>
-                            <img src="/images/pictures/IMG_1775.webp" alt="" className='w-full h-full flex object-cover scale-x-[-1]' />
-                        </motion.div>
-                    </div>
+                    {
+                        projectValue
+                        &&
+                        <div ref={divProjectRef} className='z-10 flex lg:w-[400px] w-full lg:h-auto h-[400px] rounded-[2.5rem] overflow-hidden bg-gray-700'>
+                            <motion.div
+                                variants={animateFromLeft}
+                                initial={"offscreen"}
+                                animate={viewDivProjectRef ? "onscreen" : "offscreen"}
+                                custom={0.25}
+
+                                className='z-10 flex w-full h-full bg-gradient-to-b from-blue-400 via-white to-blue-100'>
+                                <img src="/images/pictures/cl6.webp" alt="" className='w-full h-full flex object-cover scale-x-[-1]' />
+                            </motion.div>
+                        </div>
+                    }
 
 
 
-                    <div className='z-10 lg:w-[50%] flex gap-y-6 flex-col'>
+                    <div className={` ${projectValue ? "lg:w-[50%]" : "lg:w-[90%]"} z-10 flex gap-y-6 flex-col`}>
 
 
                         {

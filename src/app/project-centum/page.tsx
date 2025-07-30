@@ -1,6 +1,7 @@
 "use client"
 import { ContactUs } from "../components/home-components/ContactUs";
-import { NavHeader } from "../components/home-components/NavHeader";
+import { Gallery } from "../components/home-components/Gallery";
+import { NavHeader } from "../components/shared-components/NavHeader";
 import { DownloadProject } from "../components/project100-component/DownloadProject";
 import { ApproachSustain } from "../components/shared-components/ApproachSustain";
 import { CardBackgroundComponent } from "../components/shared-components/CardBackgroundComponent";
@@ -18,6 +19,7 @@ export default function Page100() {
             <Project100 projectValue={null}/>
             <ApproachSustain />
             <DownloadProject />
+            <Gallery />
             <ContactUs />
 
         </div>

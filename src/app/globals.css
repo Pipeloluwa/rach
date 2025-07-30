@@ -79,6 +79,8 @@ body {
   font-weight: bold;
 }
 
+
+
 @layer components {
   .big-button{
     @apply  sm:h-[55px] sm:min-w-[205px] min-w-[170px] w-full h-[50px] text-xl

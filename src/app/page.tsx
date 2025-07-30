@@ -7,7 +7,7 @@ import { JoinMovement } from "./components/home-components/JoinMovement";
 import { ContactUs } from "./components/home-components/ContactUs";
 import { Gallery } from "./components/home-components/Gallery";
 import WelcomeScreen from "./components/home-components/WelcomeScreen";
-import { NavHeader } from "./components/home-components/NavHeader";
+import { NavHeader } from "./components/shared-components/NavHeader";
 
 export default function Home() {
   return (

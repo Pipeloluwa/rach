@@ -1,6 +1,12 @@
 
 
 export const galleryData= [
+    "/images/pictures/cl4.webp",
+    "/images/pictures/cl7.webp",
+    "/images/pictures/cl6.webp",
+    "/images/pictures/cl8.webp",
+    "/images/pictures/cl9.webp",
+    "/images/pictures/cl12.webp",
     "/images/pictures/IMG_0948.webp",
     "/images/pictures/IMG_0977.webp",
     "/images/pictures/IMG_1110.webp",

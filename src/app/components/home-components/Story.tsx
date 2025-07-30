@@ -8,6 +8,16 @@ import { interFont } from '@/app/fonts/fontsConfig';
 
 export const Story = () => {
 
+    const aboutUs = [
+        `Wale Fakile is a globally experienced journalist and Senior presenter with the BBC, renowned for his clarity, investigative depth, and compelling storytelling on African and Nigerian issues. With over a decade of experience spanning journalism, communications strategy, and brand development, Wale brings a powerful blend of media insight and purposeful leadership to every venture.`,
+        `He is the founder of Rach. Gabriels Fashion Company, a proudly Nigerian shoemaking brand rooted in excellence, dignity, and sustainable empowerment. Under his leadership, the brand has grown from a fashion label into a social impact platform.`,
+        `He started Project Centum, a flagship initiative of Rach. Gabriels to train and equip 100 underserved youths annually for the next 5 years with shoemaking and entrepreneurship skills. It is a bold, national model for grassroots transformation, empowering young Nigerians with the tools to create, thrive, and lead in their communities.`,
+        `Wale also leads Propagar Media, Nigeria’s first AI-powered PR and communications company, where he is pioneering the future of precise and strategic communications.`,
+        `His unique combination of editorial excellence, brand clarity, and social innovation drives the impact of his projects across sectors.`,
+        `At the heart of his work lies a deep belief: that when skill, strategy, and spirit align, transformation becomes inevitable, not just for individuals, but for entire communities.`
+    ];
+
+
     return (
         <div className='bg-blue relative min-h-[550px] flex justify-center items-center lg:py-[8rem] py-[4rem] overflow-hidden'>
 
@@ -73,45 +83,43 @@ export const Story = () => {
                             initial={"offscreen"}
                             whileInView={"onscreen"}
                             custom={0.5}
-                            className={`md:w-[1950px] md:h-auto w-[100%] h-[400px] flex flex-col overflow-hidden rounded-xl bg-gradient-to-b from-gray-800 to-black shadow-xl`}>
+                            className={`md:w-[30%] md:h-auto w-[100%] h-[400px] flex flex-col overflow-hidden rounded-xl bg-gradient-to-b from-gray-800 to-black shadow-xl`}>
 
-                            <img src='/images/pictures/IMG_2401.webp' alt='Story Image' className='w-full h-full object-cover -scale-x-[1]' />
+                            <img src='/images/pictures/ceo.webp' alt='Story Image' className='w-full h-full object-cover object-top' />
 
                         </motion.div>
 
 
 
 
-                        <div className='flex flex-col justify-between items-center gap-y-4 '>
+                        <div className='md:w-[70%] w-full flex flex-col gap-y-4 '>
 
+                            <motion.h4
+                                variants={animateFadeUp}
+                                initial={"offscreen"}
+                                whileInView={"onscreen"}
+                                custom={0.1}
+                                className='text-white text-sm'
+                            >
+                                <span className='text-xl text-gold font-bold'>{"Wale Fakile"}</span>
+                                <br /> <span>{"(Founder, Rach. Gabriels & Visionary Behind Project Centum)"}</span>
+                                <br /> <span>{"International Broadcast Journalist | Comms/Media Tech Strategist | Branding Expert | AI & Youth Empowerment Advocate"}</span>
+                            </motion.h4>
 
-                            <div className='w-full h-full grid xl:grid-cols-3 lg:grid-cols-2 gap-8'>
-                                {stories.map((item, index) =>
-                                    <motion.div
-                                        // viewport={{once: true}}
+                            {
+                                aboutUs.map((text, index) => (
+                                    <motion.p
                                         variants={animateFadeUp}
                                         initial={"offscreen"}
                                         whileInView={"onscreen"}
-                                        custom={index * 0.2}
-                                        key={`Story${index}`} className={`${stories.length - 1 === index && index % 3 !== 0 && "xl:col-span-1 lg:col-span-2"} w-full flex flex-col rounded-xl bg-gradient-to-b from-[#434357] to-[#0b0b0e]`}>
-
-                                        <div className='bg-gold text-center py-2 px-8 font-bold text-gray-800 rounded-t-xl'>
-                                            {item.year}
-                                        </div>
-
-                                        <p className='p-8'>
-                                            {item.description}
-                                        </p>
-
-                                    </motion.div>
-                                )}
-
-                            </div>
-
-
-
-
-
+                                        custom={index * 0.1}
+                                        key={`aboutUs-${index}`}
+                                        className={`text-white text-sm ${interFont.className}`}
+                                    >
+                                        {text}
+                                    </motion.p>
+                                ))
+                            }
                         </div>
                     </div>
 
