@@ -13,7 +13,7 @@ export const CardBackgroundComponent: React.FC<ICardBackground> = ({ imagePath, 
         src={imagePath}
         className='object-cover absolute left-0 right-0 top-0 bottom-0 w-full h-full' />
 
-      <div className='absolute left-0 right-0 top-0 bottom-0 bg-black/40' />
+      <div className='absolute left-0 right-0 top-0 bottom-0 bg-black/50' />
 
 
       <section className='w-[75%] text-center h-full mx-auto z-10  absolute left-0 right-0 top-0 bottom-0 flex flex-col gap-y-8 items-center justify-center '>
