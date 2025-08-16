@@ -25,7 +25,7 @@ export const Story = () => {
                 <PageMarginContainer>
 
                     <div className='text-gold flex flex-col gap-y-2'>
-                        <div className={`degular-font-wide flex flex-wrap justify-center gap-x-1`}>
+                        <div className={`degular-font-wide flex flex-wrap justify-center`}>
                             {"The Rach. Gabriels".split("").map((char, index) => (
                                 <motion.h2
                                     // viewport={{ once: true }}
@@ -44,7 +44,7 @@ export const Story = () => {
                         </div>
 
 
-                        <div className={`degular-font-wide flex flex-wrap justify-center gap-x-1`}>
+                        <div className={`degular-font-wide flex flex-wrap justify-center`}>
                             {"Story".split("").map((char, index) => (
                                 <motion.h2
                                     // viewport={{ once: true }}
