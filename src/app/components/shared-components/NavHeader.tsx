@@ -25,7 +25,7 @@ export const NavHeader: React.FC<IActiveNav> = ({ activeTabValue }) => {
                 {"Home"}
             </Link>
 
-            <div className='h-[70px]'>
+            <div className='w-[70px]'>
                 <LogoComponent path={`${logoUrls.get(activeTab)}`}/>
             </div>
 
