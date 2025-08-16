@@ -38,16 +38,16 @@ export const NavHeader: React.FC<IActiveNav> = ({ activeTabValue }) => {
                     {"Pages"}
                 </p>
 
-                <ul className="w-[150px] absolute -left-[90%] hidden group-hover:block bg-gray-800 text-white rounded overflow-hidden shadow-md">
+                <ul className="w-[150px] absolute -left-[90%] hidden group-hover:block bg-gray-800 text-white rounded overflow-hidden shadow-md text-sm">
                    <li>
-                        <Link href={"/about-us"} className={`${activeTab === "about-us" ? "text-gold font-bold" : "text-gray-300 hover:bg-gray-700"} block px-4 py-2 cursor-pointer text-sm`}>
+                        <Link href={"/about-us"} className={`${activeTab === "about-us" ? "text-gold font-bold" : "text-gray-300 hover:bg-gray-700"} block px-4 py-4 cursor-pointer`}>
                             {"About Us"}
                         </Link>
                         
                     </li>
 
                     <li>
-                        <Link href={"/project-centum"} className={`${activeTab === "project100" ? "text-gold font-bold" : "text-gray-300 hover:bg-gray-700"} block px-4 py-2 cursor-pointer text-sm`}>
+                        <Link href={"/project-centum"} className={`${activeTab === "project100" ? "text-gold font-bold" : "text-gray-300 hover:bg-gray-700"} block px-4 py-4 cursor-pointer`}>
                             {"Project Centum"}
                         </Link>
                         
