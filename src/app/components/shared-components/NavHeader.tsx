@@ -41,7 +41,7 @@ export const NavHeader: React.FC<IActiveNav> = ({ activeTabValue }) => {
     return (
         <ul className='z-50 h-[90px] flex justify-center items-center gap-x-4 md:px-12 px-4 sticky left-0 right-0 top-0 bg-black/50 backdrop-blur '>
 
-            <div className='w-[70px]'>
+            <div className='w-[80px]'>
                 <LogoComponent path={`${logoUrls.get(activeTab)}`} />
             </div>
 
