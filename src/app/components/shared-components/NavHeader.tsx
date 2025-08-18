@@ -39,9 +39,9 @@ export const NavHeader: React.FC<IActiveNav> = ({ activeTabValue }) => {
     }
 
     return (
-        <ul className='z-50 h-[100px] flex justify-center items-center gap-x-4 md:px-12 px-4 sticky left-0 right-0 top-0 bg-black/50 backdrop-blur '>
+        <ul className='z-50 h-[90px] flex justify-center items-center gap-x-4 md:px-12 px-4 sticky left-0 right-0 top-0 bg-black/50 backdrop-blur '>
 
-            <div className='w-[80px]'>
+            <div className='w-[100px]'>
                 <LogoComponent path={`${logoUrls.get(activeTab)}`} />
             </div>
 
@@ -60,6 +60,7 @@ export const NavHeader: React.FC<IActiveNav> = ({ activeTabValue }) => {
                         variants={animateFromRight}
                         initial={"offscreen"}
                         whileInView={"onscreen"}
+                        custom={0}
                         className='h-full w-[50%] flex flex-col gap-y-2 md:pl-16 pl-2 md:pr-[60px] pr-[16px] pt-5 rounded-l-2xl bg-gradient-to-b from-gray-800 to-black'
                         >
                         
