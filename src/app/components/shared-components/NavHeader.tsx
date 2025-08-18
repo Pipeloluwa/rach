@@ -46,9 +46,6 @@ export const NavHeader: React.FC<IActiveNav> = ({ activeTabValue }) => {
             </div>
 
 
-
-
-
             {
                 openDrawer
                 &&
