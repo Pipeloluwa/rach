@@ -115,7 +115,7 @@ export const ContactUs = () => {
                                 <li className='flex gap-x-2 items-center'>
                                     <FaPhoneAlt />
 
-                                    <p>
+                                    <p className='w-full flex flex-wrap'>
                                         {"08036109271"}
                                     </p>
 
@@ -124,7 +124,7 @@ export const ContactUs = () => {
                                 <li className='flex gap-x-2 items-center'>
                                     <FaLocationDot />
 
-                                    <p>
+                                    <p className='w-full flex flex-wrap'>
                                         {"39, Janet Akitola Street, Marshy Hills Estate, Ajah, Lagos"}
                                     </p>
 
