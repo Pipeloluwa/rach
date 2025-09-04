@@ -5,6 +5,7 @@ import { animateFromLeft, animateGradualSpacing, animateFadeUp } from '@/app/ani
 import { interFont } from '@/app/fonts/fontsConfig';
 import { useRef } from 'react';
 import { IProjectValue } from '@/app/interfaces/IProject100';
+import Link from 'next/link';
 
 export const Project100: React.FC<IProjectValue> = ({ projectValue }) => {
 
@@ -180,6 +181,16 @@ export const Project100: React.FC<IProjectValue> = ({ projectValue }) => {
                                 </li>
                             </ul>
                         </motion.div>
+
+
+
+                        {
+                            projectValue
+                            &&
+                            <Link href={"/project-centum"} className={`degular-font-wide big-button text-[16px] w-[250px] h-[60px] flex justify-center items-center rounded-xl text-gray-800 font-bold bg-gradient-to-b from-[#e2be3b] from-[30%] to-[#a78304]`}>
+                                {"Read More"}
+                            </Link>
+                        }
 
                     </div>
 

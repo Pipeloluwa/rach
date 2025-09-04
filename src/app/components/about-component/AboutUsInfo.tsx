@@ -18,9 +18,14 @@ export const ABoutUsInfo = () => {
         `At the heart of his work lies a deep belief: that when skill, strategy, and spirit align, transformation becomes inevitable, not just for individuals, but for entire communities.`
     ];
 
+    const teamMembers = [
+        { title: "Human Resources Manager", name: "Stephanie Nneoma Nwache", picture: "/images/pictures/hr.webp" },
+        { title: "Chief Technology Officer", name: "Pipeloluwa Idowu", picture: "/images/pictures/coder.webp" }
+    ];
+
 
     return (
-        <div className='bg-blue relative min-h-[550px] flex justify-center items-center lg:py-[8rem] py-[4rem] overflow-hidden'>
+        <div className='bg-blue relative min-h-[1050px] flex justify-center items-center lg:py-[8rem] py-[4rem] overflow-hidden'>
 
             <motion.img
                 animate={{ y: [0, 20, 0], }}
@@ -36,8 +41,6 @@ export const ABoutUsInfo = () => {
                 <PageMarginContainer>
 
                     <div className='h-full flex md:flex-row flex-col md:gap-x-8 gap-y-8 rounded-xl shadow-xl p-[3.5px]'>
-
-
 
                         <motion.div
                             // viewport={{once: true}}
@@ -63,7 +66,7 @@ export const ABoutUsInfo = () => {
                                 custom={0.1}
                                 className='text-white text-sm'
                             >
-                                <span className='text-xl text-gold font-bold'>{"Wale Fakile"}</span>
+                                <span className='text-gold text-xl font-bold'>{"Wale Fakile"}</span>
                                 <br /> <span>{"(Founder, Rach. Gabriels & Visionary Behind Project Centum)"}</span>
                                 <br /> <span>{"International Broadcast Journalist | Comms/Media Tech Strategist | Branding Expert | AI & Youth Empowerment Advocate"}</span>
                             </motion.h4>
@@ -83,6 +86,54 @@ export const ABoutUsInfo = () => {
                                 ))
                             }
                         </div>
+                    </div>
+
+
+
+                    <div className='w-full h-full flex flex-col justify-center items-center gap-y-8'>
+                        <div className={`degular-font-wide mt-12 flex flex-wrap justify-center items-center text-center`}>
+                            {"Team Members".split("").map((char, index) => (
+                                <motion.h2
+                                    // viewport={{ once: true }}
+                                    key={`Welcome to${index}`}
+                                    variants={animateGradualSpacing}
+                                    initial={"offscreen"}
+                                    whileInView={"onscreen"}
+                                    custom={index}
+                                    exit="hidden"
+                                    style={{ whiteSpace: "pre-wrap" }}
+                                    className='text-gold text-3xl font-bold'
+                                >
+                                    {char}
+                                </motion.h2>
+                            ))}
+
+                        </div>
+
+
+                        <div className='w-full h-full flex flex-wrap gap-12 justify-center items-center '>
+
+                            {
+                                teamMembers.map((item, index) =>
+                                    <div key={`team member ${index}`} className='min-w-[300px] min-h-[500px] flex-1 flex-col justify-center items-center text-center'>
+                                        <div className='w-full h-[450px] overflow-hidden rounded-xl bg-gradient-to-b from-gray-800 to-black shadow-md shadow-black'>
+                                            <img src={item.picture} alt='Team Member' className='w-full h-full object-cover object-top' />
+                                        </div>
+
+                                        <h6 className='text-gold mt-4 text-xl font-bold'>
+                                            {item.title}
+                                        </h6>
+
+                                        <h6 className='text-white'>
+                                            {item.name}
+                                        </h6>
+
+                                    </div>
+                                )
+                            }
+
+                        </div>
+
                     </div>
 
 

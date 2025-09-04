@@ -2,7 +2,6 @@
 import { OurCommitment } from "./components/home-components/OurCommitment";
 import { Story } from "./components/home-components/Story";
 import { Project100 } from "./components/shared-components/Project100";
-import { ApproachSustain } from "./components/shared-components/ApproachSustain";
 import { JoinMovement } from "./components/home-components/JoinMovement";
 import { ContactUs } from "./components/home-components/ContactUs";
 import { Gallery } from "./components/home-components/Gallery";
@@ -19,7 +18,6 @@ export default function Home() {
       <Story />
       <OurCommitment />
       <Project100 projectValue={"Project Centum"}/>
-      <ApproachSustain />
       <JoinMovement />
       <ContactUs />
       <Gallery />
