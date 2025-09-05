@@ -84,7 +84,7 @@ export const ContactUs = () => {
 
                     <div className='z-10 w-full flex flex-col'>
 
-                        <div className='w-[500px] flex flex-col gap-y-4'>
+                        <div className='md:w-[500px] w-full flex flex-col gap-y-4'>
                             <div className={`degular-font-wide flex flex-wrap`}>
                                 {"Contact Us".split("").map((char, index) => (
                                     <motion.h2
@@ -121,10 +121,10 @@ export const ContactUs = () => {
 
                                 </li>
 
-                                <li className='flex gap-x-2 items-center'>
+                                <li className='w-full flex gap-x-2 items-center'>
                                     <FaLocationDot />
 
-                                    <p className='w-full flex flex-wrap'>
+                                    <p className='flex flex-wrap'>
                                         {"39, Janet Akitola Street, Marshy Hills Estate, Ajah, Lagos"}
                                     </p>
 
