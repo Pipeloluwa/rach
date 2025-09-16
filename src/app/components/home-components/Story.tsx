@@ -78,7 +78,7 @@ export const Story = () => {
                             custom={0.5}
                             className={`md:w-[1950px] md:h-auto w-[100%] h-[400px] flex flex-col overflow-hidden rounded-xl bg-gradient-to-b from-gray-800 to-black shadow-xl`}>
 
-                            <img src='/images/pictures/Ceo1.webp' alt='Story Image' className='w-full h-full object-cover -scale-x-[1]' />
+                            <img src='/images/pictures/Ceo1.webp' alt='Story Image' className='w-full h-full object-cover' />
 
                         </motion.div>
 
