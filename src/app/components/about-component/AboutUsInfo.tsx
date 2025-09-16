@@ -20,7 +20,7 @@ export const ABoutUsInfo = () => {
 
     const teamMembers = [
         { title: "Operations / Project Manager", name: "Stephanie Nneoma Nwache", picture: "/images/pictures/hr.webp" },
-        { title: "Creative Director", name: "Adeleke Joshua Abimbola", picture: "/images/pictures/trainer.webp" },
+        { title: "Creative Director", name: "Adeleke Joshua Abimbola", picture: "/images/pictures/CreativeDirector.webp" },
         // { title: "Chief Technology Officer", name: "Pipeloluwa Idowu", picture: "/images/pictures/coder.webp" }
     ];
 
