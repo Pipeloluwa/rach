@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import { PageMarginContainer } from '@/app/PageMarginContainer'
 import { motion } from 'motion/react'
 import React, { RefObject, useRef, useState } from 'react'
-import {  ResponseComponent } from '../shared-components/ResponseComponent';
+import { ResponseComponent } from '../shared-components/ResponseComponent';
 import { interFont } from '@/app/fonts/fontsConfig';
 import { animateFadeUp, animateGradualSpacing } from '@/app/animation/animationVariants';
 import { FaFacebook, FaPhoneAlt } from 'react-icons/fa';
@@ -116,7 +116,7 @@ export const ContactUs = () => {
                                     <FaPhoneAlt />
 
                                     <p className='w-full flex flex-wrap'>
-                                        {"08036109271"}
+                                        {"07072060051"}
                                     </p>
 
                                 </li>
@@ -142,7 +142,7 @@ export const ContactUs = () => {
                                 </li>
 
                                 <li className='flex gap-x-2 items-center'>
-                                <FaFacebook />
+                                    <FaFacebook />
 
                                     <Link href='https://www.instagram.com/rach.gabriels?igsh=eTJyYm9icDRtcGJv&utm_source=qr' target="_blank" rel="noopener noreferrer">
                                         {"Rach. Gabriels Fashion Company"}
@@ -151,7 +151,7 @@ export const ContactUs = () => {
                                 </li>
 
                                 <li className='flex gap-x-2 items-center'>
-                                <RiInstagramFill />
+                                    <RiInstagramFill />
 
                                     <Link href='https://www.instagram.com/rach.gabriels?igsh=eTJyYm9icDRtcGJv&utm_source=qr' target="_blank" rel="noopener noreferrer">
                                         {"rach.gabriels"}

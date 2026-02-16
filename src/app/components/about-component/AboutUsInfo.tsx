@@ -13,14 +13,13 @@ export const ABoutUsInfo = () => {
         `Wale Fakile is a globally experienced journalist and Senior presenter with the BBC, renowned for his clarity, investigative depth, and compelling storytelling on African and Nigerian issues. With over a decade of experience spanning journalism, communications strategy, and brand development, Wale brings a powerful blend of media insight and purposeful leadership to every venture.`,
         `He is the founder of Rach. Gabriels Fashion Company, a proudly Nigerian shoemaking brand rooted in excellence, dignity, and sustainable empowerment. Under his leadership, the brand has grown from a fashion label into a social impact platform.`,
         `He started Project Centum, a flagship initiative of Rach. Gabriels to train and equip 100 underserved youths annually for the next 5 years with shoemaking and entrepreneurship skills. It is a bold, national model for grassroots transformation, empowering young Nigerians with the tools to create, thrive, and lead in their communities.`,
-        `Wale also leads Propagar Media, Nigeria’s first AI-powered PR and communications company, where he is pioneering the future of precise and strategic communications.`,
         `His unique combination of editorial excellence, brand clarity, and social innovation drives the impact of his projects across sectors.`,
         `At the heart of his work lies a deep belief: that when skill, strategy, and spirit align, transformation becomes inevitable, not just for individuals, but for entire communities.`
     ];
 
     const teamMembers = [
         { title: "Operations / Project Manager", name: "Stephanie Nneoma Nwache", picture: "/images/pictures/hr.webp" },
-        { title: "Creative Director", name: "Adeleke Joshua Abimbola", picture: "/images/pictures/CreativeDirector.webp" },
+        { title: "Creative Director", name: "Adeleke Joshua Abimbola", picture: "/images/pictures/g_designer.jpeg" },
         // { title: "Chief Technology Officer", name: "Pipeloluwa Idowu", picture: "/images/pictures/coder.webp" }
     ];
 
