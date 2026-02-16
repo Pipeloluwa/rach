@@ -8,9 +8,13 @@ export const Sponsors = () => {
             src: "/sponsors/HI LOGO 2.png",
         },
         {
-            name: "Siedihub",
+            name: "Value 360",
             src: "/sponsors/siedihub-logo.jpeg",
         },
+        {
+            name: "SiediHub",
+            src: "/sponsors/SiediHub.png",
+        }
     ];
 
     return (
